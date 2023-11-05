@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>form_input</title>
+    <style>
+        .menu {
+                text-align: center 
+                background-color: rgb(252, 252, 252);
+                font-size: 18px;
+                padding-top: 10pt;
+        }
+    
+        .button {
+                background-color:aqua;
+                padding: 5px;
+                border-color: black;
+                text-decoration: none;
+        }
+        .button:hover { 
+                background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 align="center">form_input</h2>
+    <div align="center" class="menu" >
+        <a href="index.html" class="button">index.html</a>
+        <a href="list_data.html" class="button">list_data.html</a>
+        <a href="form_input.html" class="button">form_input.html</a>
+        <a href="tabel.html" class="button">tabel.html</a>
+        <a href="about.html" class="button">about.html</a>
+    </div>
+
+    <form action="contact.php" method="POST">
+        <fieldset>
+        <legend>Registrasi</legend>
+    <form method="post"action="proses_tambah.php">
+    <table width="400">
+        <tr>
+            <td>Nama:</td>
+            <td><input type="text" name="nama" placeholder="Nama lengkap..." /></td>
+        </tr>
+        <tr>
+            <td>Username:</td>
+            <td><input type="text" name="username" placeholder="Username..." /></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email" placeholder="Your email..." /></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="password" placeholder="Passowrd..." /></td>
+        </tr>
+        <tr>
+            <td>Jenis kelamin:</td>
+            <td><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</td>
+            <td><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</td>
+        </tr>
+        <tr>
+            <td>Agama:</td>
+
+            <td>
+                <select name="agama">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+            </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Alamat Web:</td>
+            <td><input type="url" name="name" placeholder="Masukan URL Web..." /></td>
+        </tr>
+        <tr>
+            <td>Tanggal Lahir:</td>
+            <td><input type="date" name="tanggal" /></td>
+        </tr>
+        <tr>
+            <td>Umur:</td>
+            <td><input type="number" min="10" max="90" name="umur" /></td>
+        </tr>
+        <tr>
+            <td><input type="submit" name="submit" value="Send" /></td>
+        </tr>
+
+    </table>
+    </fieldset>
+    </form>
+</body>
+</html>
